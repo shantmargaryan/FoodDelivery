@@ -97,7 +97,6 @@ const svg = () => {
 	return gulp.src(`${srcFolder}svg/**/*.svg`)
 		.pipe(gulpChanged(`${destFolder}img/svg`))
 		.pipe(gulpPlumber(plumberNotify('svg')))
-
 		.pipe(gulpSvgSprite({
 			mode: {
 				stack: {
