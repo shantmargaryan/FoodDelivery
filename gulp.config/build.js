@@ -61,14 +61,11 @@ const css = () => {
 	return gulp.src(`${srcFolder}scss/*.scss`)
 		.pipe(gulpPlumber(plumberNotify('css')))
 		.pipe(dartSass())
-		.pipe(gulpWebpCss())
-		.pipe(gulpGroupCssMediaQueries())
-		.pipe(gulpAutoprefixer({
-			cascade: false,
-			grid: true,
-			overrideBrowserslist: ["last 5 versions"]
-		}))
-		.pipe(gulpCsso())
+		// .pipe(gulpWebpCss())
+		// .pipe(gulpGroupCssMediaQueries())
+		// .pipe(gulpAutoprefixer(
+		// ))
+		// .pipe(gulpCsso())
 		.pipe(gulpRename({
 			suffix: ".min",
 			extname: ".css"
