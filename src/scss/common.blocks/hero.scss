@@ -1,0 +1,194 @@
+.hero {
+	padding: 20px;
+	padding-bottom: 70px;
+	margin-bottom: 70px;
+	overflow: hidden;
+
+	// .hero__container
+
+	&__container {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		min-height: 480px;
+		padding-top: 25px;
+
+		margin: 0 20px;
+		border-radius: 21px;
+		background-color: #8EC038;
+		transition: padding 0.3s linear 0s;
+
+
+		@media(min-width:768px) {
+			flex-direction: row;
+			height: 450px;
+			padding: 50px 100px;
+			margin: 0 auto;
+		}
+	}
+
+	// .hero__content
+
+	&__content {}
+
+	// .hero__title
+
+	&__title {
+		width: 9em;
+		margin-bottom: 20px;
+		line-height: 1;
+		font-size: calc(32px + (65 - 32) * ((100vw - 320px) / (1440 - 320)));
+	}
+
+	&__text {
+		max-width: 280px;
+		font-size: 16px;
+
+		@media(min-width:768px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	// .hero__btn
+
+	&__btn {
+		padding: 18px 27px;
+		border-radius: 32px;
+		background-color: #FFA800;
+		white-space: nowrap;
+		transition: color 0.3s ease-in 0s, background 0.3s ease-in 0s;
+
+		@media(max-width:575px){
+			padding: 10px 15px;
+		}
+	}
+
+	@media (pointer:fine) and (hover: hover) {
+		&__btn:hover {
+			color: #8EC038;
+			background-color: #FFF;
+		}
+	}
+
+	// .hero__mint-rotate
+
+	&__mint_rotate {
+		position: absolute;
+		top: -110px;
+		right: -100px;
+		transform: rotate(76deg);
+
+		@media(min-width:768px) {
+			left: 45%;
+			top: -60px;
+			transform: rotate(1deg);
+		}
+	}
+
+	// .hero__phone
+
+	&__phone {
+		position: relative;
+		bottom: -240px;
+		right: 20px;
+		width: 73px;
+		height: 73px;
+		padding: 10px;
+
+		@media(min-width:768px) {
+			display: none;
+		}
+	}
+
+	// .hero__img-box
+
+	&__img-box {
+		position: relative;
+
+		@media(min-width:768px) {
+			position: static;
+			display: flex;
+		}
+	}
+
+	// .hero__mint
+
+	&__mint {
+		max-width: 170px;
+	}
+
+	&__mint_none {
+		display: none;
+
+		@media(min-width:768px) {
+			position: absolute;
+			bottom: -70px;
+			left: -60px;
+			transform: rotate(-90deg);
+			display: block;
+		}
+	}
+
+	// .hero__food-box
+
+	&__food-box {
+		position: absolute;
+		top: 60%;
+		right: -120px;
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+
+		@media(min-width:768px) {
+			position: static;
+		}
+	}
+
+	// .hero__img
+
+	&__img {
+		max-width: 380px;
+		overflow: hidden;
+		z-index: 11;
+
+		@media(max-width:575px){
+			max-width: 300px;
+		}
+
+		@media(min-width:768px) {
+			flex-grow: 1;
+			position: relative;
+			top: 35%;
+			right: -40px;
+		}
+	}
+
+	// .hero__seed
+
+	&__seed {
+		position: absolute;
+		bottom: -50px;
+		right: 30px;
+		z-index: 10;
+		width: 124px;
+		align-self: end;
+
+		@media(min-width:768px) {
+			right: -40px;
+			bottom: -60px;
+		}
+	}
+
+	// .hero__leaf
+
+	&__leaf {
+		position: absolute;
+		top: 200%;
+		left: -20px;
+
+		@media(min-width:768px) {
+			top: 90%;
+			left: 50%;
+		}
+	}
+}

@@ -1,0 +1,70 @@
+.nav {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: -100vh;
+	bottom: 100vh;
+	z-index: 99;
+	background-color: #c1dfc9;
+	overflow: auto;
+	transition: top 0.3s ease 0s, bottom 0.3s ease 0s;
+
+
+	&_open {
+		top: 0;
+		bottom: 45%;
+	}
+
+	// .nav__list
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		align-items: center;
+	}
+
+	// .nav__item
+
+	&__item {
+
+		&_end {
+			display: flex;
+			align-items: center;
+			gap: 5px;
+		}
+	}
+
+	&__link:hover {
+		text-decoration-line: underline;
+	}
+
+	&__link_num {
+		color: #302929;
+		font-size: 15px;
+		font-weight: 700;
+	}
+
+	// .nav__phone-icon
+
+	&__phone-icon {
+		width: 24px;
+		height: 24px;
+	}
+}
+
+
+@media(min-width:1200px) {
+	.nav {
+		position: static;
+		background-color: transparent;
+		overflow: visible;
+	}
+
+	.nav__list {
+		flex-direction: row;
+	}
+}

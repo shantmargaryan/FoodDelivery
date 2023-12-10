@@ -1,0 +1,193 @@
+.footer {
+	padding-top: 30px;
+	padding-bottom: 50px;
+	background-color: #8EC038;
+
+	@media(min-width:768px) {
+		padding-top: 65px;
+	}
+
+	// .footer__container
+
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+
+		@media(min-width:768px) {
+			flex-wrap: nowrap;
+		}
+	}
+
+
+	// .footer__logo-box
+
+	&__logo-box {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	// .footer__logo
+
+	&__logo {
+		margin-bottom: 40px;
+	}
+
+	// .footer__socials
+
+	&__socials {
+		display: flex;
+		gap: 30px;
+		margin-bottom: 50px;
+	}
+
+	// .footer__list-box
+
+	&__list-box {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 20px;
+		margin-bottom: 50px;
+
+		@media(min-width:768px) {
+			justify-content: space-evenly;
+			margin: 0;
+		}
+	}
+
+	// .footer__list
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	// .footer__item
+
+	&__item {
+		display: flex;
+		gap: 20px;
+	}
+
+	// .footer__link
+
+	&__link {}
+
+	// .footer__text-box
+
+	&__text-box {}
+
+	// .footer__text
+
+	&__text {
+		font-weight: 300;
+	}
+
+	// .footer__bottom-box
+
+	&__bottom-box {}
+
+	// .footer__bottom-list
+
+	&__bottom-list {
+		margin-bottom: 30px;
+
+		@media(min-width:768px) {
+			width: 15em;
+		}
+	}
+
+	// .footer__icon
+
+	&__icon {
+		width: 8px;
+		height: 13px;
+	}
+
+	// .footer__subtitle
+
+	&__subtitle {
+		color: #FFF;
+		font-size: 16px;
+		font-weight: 700;
+	}
+
+	&__link-bottom {
+		font-weight: 700;
+	}
+
+	// .footer__bottom-text-box
+
+	&__bottom-text-box {
+		width: 18em;
+		margin-bottom: 40px;
+
+		@media(min-width:768px) {
+			margin: 0;
+		}
+	}
+
+	// .footer__bottom-text
+
+	&__bottom-text {}
+
+	&__bottom-text::before {
+		content: "•";
+	}
+
+	// .footer__img-box
+
+	&__img-box {
+		padding: 0 193px;
+		opacity: 0;
+		position: relative;
+
+		@media(min-width:992px) {
+			opacity: 1;
+		}
+	}
+
+	// .footer__imgCircl
+
+	&__imgCircl {
+		position: absolute;
+		left: 112%;
+		bottom: 0;
+		max-width: 471px;
+		min-height: 427px;
+	}
+
+	// .footer__img
+
+	&__img {
+		position: absolute;
+		top: -90%;
+		left: 90%;
+		width: 571px;
+		height: 380px;
+	}
+
+	// .footer__last-box
+
+	&__last-box {}
+
+	// .footer__last-text
+
+	&__last-text {
+		font-weight: 300;
+	}
+}
+
+.socials {
+
+	// .socials__icon
+
+	&__icon {
+		width: 20px;
+		height: 20px;
+	}
+}

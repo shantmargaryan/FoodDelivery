@@ -1,0 +1,21 @@
+$wrapperWidth: 1440;
+
+:root {
+	// base
+	--font-family: "Montserrat";
+	--content-width: 1200px;
+	--container-offset: 15px;
+	--container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+	// colors
+	--link-dark: #302929;
+	--link-light: #FFFFFF;
+	--btn-color: #fff;
+	--btn-background: #FFA800;
+	--title-light: #fff;
+	--title-dark: #000;
+	--small-title: #302929;
+	--text-light: #fff;
+	--text-dark: #000;
+	--subtitle-color: #000;
+}
