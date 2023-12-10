@@ -61,7 +61,7 @@ const css = () => {
 	return gulp.src(`${srcFolder}scss/*.scss`)
 		.pipe(gulpPlumber(plumberNotify('css')))
 		.pipe(dartSass())
-		// .pipe(gulpWebpCss())
+		// .pipe(gulpWebpCss()) error
 		.pipe(gulpGroupCssMediaQueries())
 		.pipe(gulpAutoprefixer({
 			cascade: false,
@@ -101,7 +101,6 @@ const js = () => {
 				],
 			},
 		}))
-
 		.pipe(gulp.dest(`${destFolder}js/`))
 }
 export { js }
