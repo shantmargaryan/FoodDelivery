@@ -17,7 +17,7 @@
 			width: 100%;
 			height: $height-line;
 			background-color: $color-line;
-			transition: all 0.3s ease-in-out;
+			transition: all 0.6s ease;
 		}
 		@content;
 		@media (min-width: $visible-when) {
